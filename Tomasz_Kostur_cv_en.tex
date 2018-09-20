@@ -1,0 +1,212 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+%\usepackage[OT4]{fontenc}
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Tomasz} % Your first name
+\familyname{Kostur} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{ul. Nadgoplańska 16B}{88-150 Kruszwica, Polska}
+\mobile{+48 669 735 664}
+%\phone{}
+%\fax{(000) 111 1113}
+\email{tomasz.kostur@gmail.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+\photo[110pt][0.4pt]{pictures/ja.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Work experience}
+
+\cventry{2013--2015}{PLC programmer}{\textsc{Progterm}}{Konin}{}{}
+
+\cvitem{\textbf{Duties}}{Making a full program, on Carel PLC's.
+    The program controls air heat pump work.}
+\cvitem{\textbf{Program features}}{
+\begin{itemize}
+\item Communication with compressor controller via MODBUS protocol,
+\item Re configurable algorithm of smooth power setpoint,
+\item Controlling internal devices like liquid pumps and heaters,
+\item Controlling internal devices like liquid pumps and heaters,
+\item Full graphicall user interface on Touch-panel: "Carel PGD Touch".
+\end{itemize}
+Worked as volunteer}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Key skills and competencies}
+
+\cvitem{}{Programming languages: \textsc{C}, \textsc{C++}, \textsc{Python}, \textsc{Verilog}, \textsc{Bash}, \textsc{Tcl}, \textsc{Structured Text}}
+\cvitem{}{Knowledge of OpenCV library}
+\cvitem{}{Knowledge of programming tools: GCC, GNU Make, CMake, Vim, QtCreator, Microsoft Visual Studio}
+\cvitem{}{Knowledge of system GNU/Linux, Microsoft Windows}
+\cvitem{}{Knowledge of OpenOffice}
+\cvitem{}{Knowledge of environments: Atmel Studio, Matlab, Xillinx Vivado, Autodesk Inventor, KiCad}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Academic Qualifications}
+
+\cventry{2014--2015}{Master Degree: Control engineering and Robotics}{Poznań University of technology, Faculty of Electrical Engineering}{\textit{full time}}{}{Specialization: Robotics}  % Arguments not required can be left empty
+\cventry{2011--2014}{Bachelors Degree: Control engineering and Robotics}{Poznań University of technology, Faculty of Electrical Engineering}{\textit{full time}}{}{Specialization: Robotics}
+%\cventry{2010--2011}{Summer Intern}{}{}{}{}
+
+\section{Projects}
+
+\subsection{Master Degree}
+
+\cvitem{\textbf{Title}}{\emph{Implementation of calculating accelerator, supervised by Linux embedded}}
+\cvitem{\textbf{Description}}{Project contains implementation of hardware device for
+    acceleration of stereo-vision algorithm, made on Xillinx Zynq 7000 platform.
+        Zynq 7000 is a platform containing ARM based processor and programmable logic at one integrated circuit area.}
+\cvitem{\textbf{Main tasks}}{
+    \begin{itemize}
+    \item compilation of Linux system on ARM architecture
+    \item implementation of hardware accelerator in Verilog programming language
+    \item implementation of accelerator's API made in C programming language
+    \item comparison of the results with similar program made with OpenCV library
+    \end{itemize}}
+
+
+
+\subsection{Bachelors Degree}
+
+\cvitem{\textbf{Title}}{\emph{Implementation of electronics commutator of model BLDC motor.}}
+\cvitem{\textbf{Description}}{Project contains practical solution of electronic commutation problem in direct current brushless motors, widely used in aerospace models and drones.}
+\cvitem{\textbf{Main tasks}}{
+  \begin{itemize}
+    \item full project of PCB,
+    \item calculating and finding electronic elements,
+    \item writing program on ATmega family microcontroler with C programming language.
+    \end{itemize}}
+
+\subsection{Optical recognition project}
+
+\cvitem{\textbf{Description}}{RRecognition of vehicle registration plates number from photography.}
+\cvitem{\textbf{Main tasks}}{
+  \begin{itemize}
+    \item project and write program in C++ programming language,
+    \item using OpenCV library,
+    \item making own OCR algorithm.
+    \end{itemize}}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Additional skills}
+
+\cvitem{}{Car and motorcycle driving license}
+%\cvitem{2009}{Poster at the Annual Business Conference in Oregon}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Polish}{Mother language}{}
+\cvitemwithcomment{English}{Intermediate}{Good command and reading technical manuals}
+%\cvitemwithcomment{Dutch}{Basic}{Basic words and phrases only}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Music}{Playing on acoustic/electrical guitar}
+\cvlistdoubleitem{Martial arts}{Windsurfing}
+\cvlistitem{Climbing}
+
+\section{Non professional achievments}
+\cvitem{}{Co-autor, music composer for feature-length documentary movie "Get away to Pitcairn". The movie premiere was 15 march 2015, on "Kolosy" festival in Gdynia.}
+
+\footnotesize{
+  \vfill
+Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w niniejszym dokumencie dla potrzeb niezbędnych do procesu rekrutacji
+(zgodnie z Ustaw a z dnia 29.08.1997 o ochronie danych osobowych, Dziennik Ustaw Nr 133 Poz. 883)
+}
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+%
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-3] % Dummy text
+%
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
+\grid
+\grid
