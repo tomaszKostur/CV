@@ -14,8 +14,8 @@
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 %
 % Important note:
-% This template requires the moderncv.cls and .sty files to be in the same 
-% directory as this .tex file. These files provide the resume style and themes 
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
 % used for structuring the document.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -70,6 +70,30 @@
 
 \section{Doświadczenie zawodowe}
 
+%\cventry{2015--*}{Software engineer}{Intel Technology Poland}{cztery}{pięć}{}
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Umiejętności}
+
+\cvitem{Dobra znajomość}{ Python, C, C++, Bash}
+\cvitem{Podstawowa znajomość}{SQL, golang, html/css, \LaTeX}
+\cvitem{Narzędzia, biblioteki języka Python}{pytest, pdb/pudb, Kivy, Django, Sphinx}
+\cvitem{Narzędzia, biblioteki języka C lub C++}{OpenCV, avrlibc, STL, gtest}
+\cvitem{Narzędzia ogólne}{Docker, ibvirt, Qemu, MariaDB, KiCad, GCC, GNU Make, Vim, Atom}
+\cvitem{}{Znajomość systemu operacyjnego GNU/Linux}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Studia i praktyka}
+
+\cventry{2014--2015}{Magisterskie: Automatyka i Robotyka}{Wydział Elektryczny Politechniki Poznańskiej}{\textit{studia dzienne}}{}{Specjalizacja: Robotyka}  % Arguments not required can be left empty
+\cventry{2011--2014}{Inżynierskie: Automatyka i Robotyka}{Wydział Elektryczny Politechniki Poznańskiej}{\textit{studia dzienne}}{}{Specjalizacja: Robotyka}
+
 \cventry{2013--2015}{Programista PLC}{\textsc{Progterm}}{Konin}{}{}
 
 \cvitem{\textbf{Zakres obowiązków}}{Wykonanie kompletnego programu dla sterownika PLC firmy Carel.
@@ -82,32 +106,31 @@
 \item Sterowanie wewnętrznymi komponentami pompy ciepła takimi jak pompy cyrkulacyjne oraz grzałki,
 \item Pełna wizualizacja na Touch-panelu: "Carel PGD Touch".
 \end{itemize}
-Praca w ramach wolontariatu}
+}
 
-%----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Umiejętności}
-
-\cvitem{}{Znajomość języków programowania: \textsc{C}, \textsc{C++}, \textsc{Python}, \textsc{Verilog}, \textsc{Bash}, \textsc{Tcl}, \textsc{Structured Text}}
-\cvitem{}{Znajomość biblioteki OpenCV}
-\cvitem{}{Znajomość narzędzi programistycznych: GCC, GNU Make, CMake, Vim, QtCreator, Microsoft Visual Studio}
-\cvitem{}{Znajomość systemu operacyjnego GNU/Linux, Microsoft Windows}
-\cvitem{}{Znajomość pakietu biurowego OpenOffice}
-\cvitem{}{Znajomość oprogramowania naukowego/inżynuerskiego: Atmel Studio, Matlab, Xillinx Vivado, Autodesk Inventor, KiCad}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Studia}
-
-\cventry{2014--2015}{Magisterskie: Automatyka i Robotyka}{Wydział Elektryczny Politechniki Poznańskiej}{\textit{studia dzienne}}{}{Specjalizacja: Robotyka}  % Arguments not required can be left empty
-\cventry{2011--2014}{Inżynierskie: Automatyka i Robotyka}{Wydział Elektryczny Politechniki Poznańskiej}{\textit{studia dzienne}}{}{Specjalizacja: Robotyka}
 %\cventry{2010--2011}{Summer Intern}{}{}{}{}
 
 \section{Projekty}
+
+\subsection{Let's Settle}
+
+\cvitem{\textbf{Opis}}{Aplikacja GUI na system Anrdoid, przeliczjca rozliczenia z kosztow wycieczek, pomiedzy uzytkownikami.}
+\cvitem{\textbf{Zakres pracy}}{
+    \begin{itemize}
+    \item{zaprojektowanie i napisanie programu z jezyku Python,}
+    \item{zastosowanie biblioteki Kivy.}
+    \end{itemize}}
+}
+
+\subsection{Projekt programu wizyjnego}
+
+\cvitem{\textbf{Opis}}{Rozpoznawanie numerów tablic rejestracyjnych na podstawie ich zdjęć.}
+\cvitem{\textbf{Zakres pracy}}{
+  \begin{itemize}
+    \item zaprojektowanie i napisanie programu w języku C++,
+    \item zastosowanie biblioteki OpenCV,
+    \item zastosowanie autorskiego modułu OCR.
+    \end{itemize}}
 
 \subsection{Praca Magisterska}
 
@@ -133,16 +156,6 @@ Praca w ramach wolontariatu}
     \item zaprojektowanie analogowo-cyfrowego układu elektronicznego realizującego zadanie sterowania,
     \item zaprojektowanie obwodu elektronicznego w technologii PCB,
     \item napisanie programu na mikrokontroler z rodziny ATmega w języku C.
-    \end{itemize}}
-
-\subsection{Projekt programu wizyjnego}
-
-\cvitem{\textbf{Opis}}{Rozpoznawanie numerów tablic rejestracyjnych na podstawie ich zdjęć.}
-\cvitem{\textbf{Zakres pracy}}{
-  \begin{itemize}
-    \item zaprojektowanie i napisanie programu w języku C++,
-    \item zastosowanie biblioteki OpenCV,
-    \item zastosowanie autorskiego modułu OCR.
     \end{itemize}}
 
 %----------------------------------------------------------------------------------------
@@ -172,9 +185,8 @@ Praca w ramach wolontariatu}
 
 \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
 
-\cvlistdoubleitem{Muzyka}{Gra na gitarze akustycznej/elektrycznej}
-\cvlistdoubleitem{Sporty walki}{Windsurfing}
-\cvlistitem{Wspinaczka}
+\cvlistdoubleitem{Muzyka filmowa}{Elektronika analogowa}
+\cvlistitem{Wspinaczka skałkowa}{Wspinaczka wyskogórska}
 
 \section{Inne osiągnięcia}
 \cvitem{}{Kompozytor muzyki do pełnometrażowego filmu dokumentalnego: "GetAway to Pitcairn" mającego premierę 15 marca 2015, na festiwalu "Kolosy" w Gdyni.}
