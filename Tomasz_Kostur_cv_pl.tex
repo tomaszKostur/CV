@@ -65,26 +65,67 @@
 \makecvtitle % Print the CV title
 
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Doświadczenie zawodowe}
-
-%\cventry{2015--*}{Software engineer}{Intel Technology Poland}{cztery}{pięć}{}
-%----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Umiejętności}
 
-\cvitem{Dobra znajomość}{ Python, C, C++, Bash}
-\cvitem{Podstawowa znajomość}{SQL, golang, html/css, \LaTeX}
-\cvitem{Narzędzia, biblioteki języka Python}{pytest, pdb/pudb, Kivy, Django, Sphinx}
-\cvitem{Narzędzia, biblioteki języka C lub C++}{OpenCV, avrlibc, STL, gtest}
-\cvitem{Narzędzia ogólne}{Docker, ibvirt, Qemu, MariaDB, KiCad, GCC, GNU Make, Vim, Atom}
-\cvitem{}{Znajomość systemu operacyjnego GNU/Linux}
+\cvitem{\textbf{Pyhton}:} {
+    \begin{itemize}
+    \item Dobra znajomość ogólna języka.
+    \item \textbf{pytest}: tworzenie testów, fixtur, ingerencja w procesy kolekcjonowania przypadków testowych, parametryzacja.
+    \item \textbf{pdb/pudb}: swobodne poruszanie się po interfejsie oraz korzystanie ze wszystkich narzędzi debugera.
+    \item \textbf{Kivy}: tworzenie aplikacji z dynamicznie dodawanymi lub usuwanymi widgetami, korzystanie ze standardowej pętli zdarzeń.
+    \item \textbf{Django}: podstawowa wiedza na temat tworzenia aplikacji oraz założeń frameworku.
+    \item \textbf{Sphinx}: ogólna wiedza na temat zasad komentowania kodu kompatybilnego z generatorem dokumentacji, generowanie dokumentacji z użyciem predefiniowanych stylów.
+    \end{itemize}
+}
+\cvitem{\textbf{C++}:} {
+    \begin{itemize}
+    \item znajomość \textbf{STL}.
+    \item podstawowe techniki programowania \textbf{wielowątkowego} przy użyciu standardowej biblioteki C++11.
+    \item podstawowa znajomość biblioteki \textbf{OpenCV}.
+    \item podstawowa znajomość frameworku \textbf{gtest}.
+    \end{itemize}
+}
+\cvitem{\textbf{C}:} {\begin{itemize}
+\item Tworzenie i kompilacja programów na mikrokontrolery AVR z użyciem \textbf{avrlibc}.
+\end{itemize}}
 
+\cvitem{Pozostałe:} {
+    \begin{itemize}
+    \item \textbf{SQL} przy użyciu MariaDB.
+    \item \LaTeX.
+    \item \textbf{Bash}
+    \item Podstawy \textbf{html/css}.
+    \item \textbf{Docker} tworzenie oraz używanie pojedynczych kontenerów.
+    \item Tworzenie maszyn wirtualnychn za pomocą \textbf{libvirt} we współpracy z \textbf{Qemu}.
+    \item Kompilacja za pomocą \textbf{GCC} oraz \textbf{GNU Make}.
+    \item Ulubione edytory: \textbf{Vim}, \textbf{Atom}.
+    \item \textbf{Golang}, pierwsze kroki w języku.
+    \end{itemize}
+}
 
+\cvitem{}{Dobra znajomość systemu operacyjnego GNU/Linux.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Doświadczenie zawodowe}
+
+\cventry{2015--*}{Software engineer}{Intel Technology Poland}{}{}{Grupy: \begin{itemize}
+    \item  \textit{High performance computing} (2015-2017)
+    \item \textit{Data center group} (2017-*)
+\end{itemize} }
+\cvitem{Kompetencje}{
+    \begin{itemize}
+    \item Tworzenie, testów oprogramowania w językach Pyhton oraz C++.
+    \item Monitoring wyników.
+    \item Utrzymywanie firmowego frameworku automatycznego wykonywania testów, napisanego w języku Python.
+    \item Debugowanie kodu, oraz dostarczanie skryptów reprodukujących błędy.
+    \end{itemize}
+}
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
@@ -94,69 +135,26 @@
 \cventry{2014--2015}{Magisterskie: Automatyka i Robotyka}{Wydział Elektryczny Politechniki Poznańskiej}{\textit{studia dzienne}}{}{Specjalizacja: Robotyka}  % Arguments not required can be left empty
 \cventry{2011--2014}{Inżynierskie: Automatyka i Robotyka}{Wydział Elektryczny Politechniki Poznańskiej}{\textit{studia dzienne}}{}{Specjalizacja: Robotyka}
 
-\cventry{2013--2015}{Programista PLC}{\textsc{Progterm}}{Konin}{}{}
-
-\cvitem{\textbf{Zakres obowiązków}}{Wykonanie kompletnego programu dla sterownika PLC firmy Carel.
-    Program realizuje sterowanie powietrznej pompy ciepła. \newline{}}
-\cvitem{\textbf{Cechy programu}}{
-\begin{itemize}
-\item Komunikacja poprzez protokół MODBUS ze sterownikiem sprężarki pompy ciepła,
-\item Konfigurowalny algorytm płynnego zadawania mocy sprężarki,
-\item Obsługa i nadzór pracy wejść i wyjść sygnałów analogowych oraz cyfrowych,
-\item Sterowanie wewnętrznymi komponentami pompy ciepła takimi jak pompy cyrkulacyjne oraz grzałki,
-\item Pełna wizualizacja na Touch-panelu: "Carel PGD Touch".
-\end{itemize}
-}
-
-%\cventry{2010--2011}{Summer Intern}{}{}{}{}
-
 \section{Projekty}
 
 \subsection{Let's Settle}
 
-\cvitem{\textbf{Opis}}{Aplikacja GUI na system Anrdoid, przeliczjca rozliczenia z kosztow wycieczek, pomiedzy uzytkownikami.}
-\cvitem{\textbf{Zakres pracy}}{
-    \begin{itemize}
-    \item{zaprojektowanie i napisanie programu z jezyku Python,}
-    \item{zastosowanie biblioteki Kivy.}
-    \end{itemize}}
-}
+\cvitem{\textbf{Opis}}{Aplikacja GUI na system Anrdoid, przeliczająca rozliczenia z kosztów wycieczek, pomiędzy użytkownikami. Napisana w języku Python z użyciem biblioteki Kivy.}
 
 \subsection{Projekt programu wizyjnego}
 
-\cvitem{\textbf{Opis}}{Rozpoznawanie numerów tablic rejestracyjnych na podstawie ich zdjęć.}
-\cvitem{\textbf{Zakres pracy}}{
-  \begin{itemize}
-    \item zaprojektowanie i napisanie programu w języku C++,
-    \item zastosowanie biblioteki OpenCV,
-    \item zastosowanie autorskiego modułu OCR.
-    \end{itemize}}
+\cvitem{\textbf{Opis}}{Rozpoznawanie numerów tablic rejestracyjnych na podstawie ich zdjęć. Projekt napisany w języku C++ z użyciem biblioteki OpenVC.}
 
 \subsection{Praca Magisterska}
 
 \cvitem{\textbf{Tytuł}}{\emph{Realizacja sprzętowego akceleratora obliczeń działającego pod kontrolą systemu GNU/Linux}}
-\cvitem{\textbf{Opis}}{Praca dotyczy realizacji przyspieszenia obliczeń algorytmu stereowizyjnego na platformie Xillinx Zynq 7000,
+\cvitem{\textbf{Opis}}{Praca dotyczy realizacji przyspieszenia obliczeń algorytmu stereo-wizyjnego na platformie Xillinx Zynq 7000,
     łączącej w obrębie jednego układu scalonego procesor architektury ARM oraz logikę programowalną.}
-\cvitem{\textbf{Zakres pracy}}{
-    \begin{itemize}
-    \item kompilacja systemu opartego na jądrze Linux na platformę w architekturze ARM,
-    \item zaprojektowanie sprzętowego akceleratora w języku Verilog,
-    \item dostarczenie napisanego w C API dla zaprojektowanego akceleratora,
-    \item porównanie otrzymanych wyników wydajnościowych z analogicznymi funkcjonalnościami zawartymi w bibliotece OpenCV.
-    \end{itemize}}
-
-
 
 \subsection{Praca Inżynierska}
 
 \cvitem{\textbf{Tytuł}}{\emph{Realizacja elektronicznego komutatora modelarskiego silnika BLDC}}
-\cvitem{\textbf{Opis}}{Praca dotyczy zagadnienia elektronicznej komutacji bezszczotkotkowego silnika prądu stałego ze sprzężeniem na podstawie sygnałów "back EMF" uzwojeń silnika.}
-\cvitem{\textbf{Zakres pracy}}{
-  \begin{itemize}
-    \item zaprojektowanie analogowo-cyfrowego układu elektronicznego realizującego zadanie sterowania,
-    \item zaprojektowanie obwodu elektronicznego w technologii PCB,
-    \item napisanie programu na mikrokontroler z rodziny ATmega w języku C.
-    \end{itemize}}
+\cvitem{\textbf{Opis}}{Praca dotyczy zagadnienia elektronicznej komutacji bezszczotkotkowego silnika prądu stałego ze sprzężeniem na podstawie sygnałów "back EMF" uzwojeń silnika. Komutator zbudowany został zbudowany na mikrokontrolerze AVR z softem napisanym c języku \textit{C} przy użyciu \textit{avrlibc}.}
 
 %----------------------------------------------------------------------------------------
 %	COMMUNICATION SKILLS SECTION
@@ -186,37 +184,20 @@
 \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
 
 \cvlistdoubleitem{Muzyka filmowa}{Elektronika analogowa}
-\cvlistitem{Wspinaczka skałkowa}{Wspinaczka wyskogórska}
+\cvlistdoubleitem{Wspinaczka skałkowa}{Wspinaczka wysokogórska}
 
+%----------------------------------------------------------------------------------------
+%	BONUS ACHIEWMENTS
+%----------------------------------------------------------------------------------------
 \section{Inne osiągnięcia}
-\cvitem{}{Kompozytor muzyki do pełnometrażowego filmu dokumentalnego: "GetAway to Pitcairn" mającego premierę 15 marca 2015, na festiwalu "Kolosy" w Gdyni.}
+\cvitem{}{Kompozytor, współtwórca muzyki do pełnometrażowego filmu dokumentalnego: \textbf{"GetAway to Pitcairn"}, mającego premierę 15 marca 2015, na festiwalu "Kolosy" w Gdyni.}
+\cvitem{}{Kompozytor, współtwórca muzyki do krótkometrażowego filmu dokumentalnego: \textbf{"Bajeczki na dobranoc"}, mającego premierę 2016 roku, na festiwalu "Papaya Films" w Bydgoszczy.}
 
 \footnotesize{
   \vfill
 Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w niniejszym dokumencie dla potrzeb niezbędnych do procesu rekrutacji
 (zgodnie z Ustaw a z dnia 29.08.1997 o ochronie danych osobowych, Dziennik Ustaw Nr 133 Poz. 883)
 }
-%----------------------------------------------------------------------------------------
-%	COVER LETTER
-%----------------------------------------------------------------------------------------
-
-% To remove the cover letter, comment out this entire block
-
-%\clearpage
-%
-%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
-%\date{\today} % Letter date
-%\opening{Dear Sir or Madam,} % Opening greeting
-%\closing{Sincerely yours,} % Closing phrase
-%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
-%
-%\makelettertitle % Print letter title
-%
-%\lipsum[1-3] % Dummy text
-%
-%\makeletterclosing % Print letter signature
-
-%----------------------------------------------------------------------------------------
 
 \end{document}
 \grid

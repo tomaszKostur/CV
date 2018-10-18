@@ -14,8 +14,8 @@
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 %
 % Important note:
-% This template requires the moderncv.cls and .sty files to be in the same 
-% directory as this .tex file. These files provide the resume style and themes 
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
 % used for structuring the document.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -53,7 +53,7 @@
 %\phone{}
 %\fax{(000) 111 1113}
 \email{tomasz.kostur@gmail.com}
-%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\homepage{https://github.com/tomaszKostur}{https://github.com/tomaszKostur} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
 %\extrainfo{additional information}
 \photo[110pt][0.4pt]{pictures/ja.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 %\quote{"A witty and playful quotation" - John Smith}
@@ -65,38 +65,67 @@
 \makecvtitle % Print the CV title
 
 %----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\cvitem{\textbf{Pyhton}:} {
+    \begin{itemize}
+    \item Good general knowelegde of language.
+    \item \textbf{pytest}: writing tests, fixtures, customization of test cases collection process, parametrization.
+    \item \textbf{pdb/pudb}: effective using interfaces of debugger and skillfull using all of its tools.
+    \item \textbf{Kivy}: making applications with dynamic added widgets, using standard loop of events.
+    \item \textbf{Django}: basic knowelegde of making applications and assumptions of the framework.
+    \item \textbf{Sphinx}: general knowelegde about rules for making comments compatible with the documentation generator, generating documentation using pre-defined styles.
+    \end{itemize}
+}
+\cvitem{\textbf{C++}:} {
+    \begin{itemize}
+    \item familiarity with \textbf{STL}.
+    \item basic techniques of \textbf{multi thread} programming, using C++11 standard library.
+    \item basic knowelegde of \textbf{OpenCV} library.
+    \item basic knowelegde of \textbf{gtest} framework.
+    \end{itemize}
+}
+\cvitem{\textbf{C}:} {\begin{itemize}
+\item Creating and compiling programs for AVR microcontrollers using \textbf{avrlibc}.
+\end{itemize}}
+
+\cvitem{Pozostałe:} {
+    \begin{itemize}
+    \item \textbf{SQL} using MariaDB.
+    \item \LaTeX.
+    \item \textbf{Bash}
+    \item Basics of \textbf{html/css}.
+    \item \textbf{Docker} making and using indyvidual containers.
+    \item Making virtual machines using \textbf{libvirt} paired with \textbf{Qemu}.
+    \item Compilation using \textbf{GCC} and \textbf{GNU Make}.
+    \item Favorite editors: \textbf{Vim}, \textbf{Atom}.
+    \item \textbf{Golang}, first steps in lagnuage.
+    \end{itemize}
+}
+
+\cvitem{}{Good knowelegde about GNU/Linux OS.}
+
+%----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Work experience}
 
-\cventry{2013--2015}{PLC programmer}{\textsc{Progterm}}{Konin}{}{}
-
-\cvitem{\textbf{Duties}}{Making a full program, on Carel PLC's.
-    The program controls air heat pump work.}
-\cvitem{\textbf{Program features}}{
-\begin{itemize}
-\item Communication with compressor controller via MODBUS protocol,
-\item Re configurable algorithm of smooth power setpoint,
-\item Controlling internal devices like liquid pumps and heaters,
-\item Controlling internal devices like liquid pumps and heaters,
-\item Full graphicall user interface on Touch-panel: "Carel PGD Touch".
-\end{itemize}
-Worked as volunteer}
-
-%----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Key skills and competencies}
-
-\cvitem{}{Programming languages: \textsc{C}, \textsc{C++}, \textsc{Python}, \textsc{Verilog}, \textsc{Bash}, \textsc{Tcl}, \textsc{Structured Text}}
-\cvitem{}{Knowledge of OpenCV library}
-\cvitem{}{Knowledge of programming tools: GCC, GNU Make, CMake, Vim, QtCreator, Microsoft Visual Studio}
-\cvitem{}{Knowledge of system GNU/Linux, Microsoft Windows}
-\cvitem{}{Knowledge of OpenOffice}
-\cvitem{}{Knowledge of environments: Atmel Studio, Matlab, Xillinx Vivado, Autodesk Inventor, KiCad}
-
+\cventry{2015--*}{Software engineer}{Intel Technology Poland}{}{}{Teams: \begin{itemize}
+    \item  \textit{High performance computing} (2015-2017)
+    \item \textit{Data center group} (2017-*)
+\end{itemize} }
+\cvitem{Expertises}{
+    \begin{itemize}
+    \item Making automate software tests, using Python and C++.
+    \item Monitoring of tests results.
+    \item Maitaining proprietary test schedule framework, written in Python.
+    \item Debugging code and shipping bug-reproduction scripts.
+    \end{itemize}
+}
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
@@ -109,42 +138,25 @@ Worked as volunteer}
 
 \section{Projects}
 
+\subsection{Let's Settle}
+
+\cvitem{\textbf{Opis}}{GUI application for Android OS. Calculator for turistic trips costs, shared between excirsion members. Written in Python using Kivy framework.}
+
 \subsection{Master Degree}
 
 \cvitem{\textbf{Title}}{\emph{Implementation of calculating accelerator, supervised by Linux embedded}}
 \cvitem{\textbf{Description}}{Project contains implementation of hardware device for
     acceleration of stereo-vision algorithm, made on Xillinx Zynq 7000 platform.
         Zynq 7000 is a platform containing ARM based processor and programmable logic at one integrated circuit area.}
-\cvitem{\textbf{Main tasks}}{
-    \begin{itemize}
-    \item compilation of Linux system on ARM architecture
-    \item implementation of hardware accelerator in Verilog programming language
-    \item implementation of accelerator's API made in C programming language
-    \item comparison of the results with similar program made with OpenCV library
-    \end{itemize}}
-
-
 
 \subsection{Bachelors Degree}
 
 \cvitem{\textbf{Title}}{\emph{Implementation of electronics commutator of model BLDC motor.}}
-\cvitem{\textbf{Description}}{Project contains practical solution of electronic commutation problem in direct current brushless motors, widely used in aerospace models and drones.}
-\cvitem{\textbf{Main tasks}}{
-  \begin{itemize}
-    \item full project of PCB,
-    \item calculating and finding electronic elements,
-    \item writing program on ATmega family microcontroler with C programming language.
-    \end{itemize}}
+\cvitem{\textbf{Description}}{Project contains practical solution of electronic commutation problem in direct current brushless motors, widely used in aerospace models and drones. The comutator is made using AVR microcontroller, it's software is made in \textit{C} using \textit{avrlibc}}
 
 \subsection{Optical recognition project}
 
-\cvitem{\textbf{Description}}{RRecognition of vehicle registration plates number from photography.}
-\cvitem{\textbf{Main tasks}}{
-  \begin{itemize}
-    \item project and write program in C++ programming language,
-    \item using OpenCV library,
-    \item making own OCR algorithm.
-    \end{itemize}}
+\cvitem{\textbf{Description}}{Recognition of vehicle registration plates number from photography. Written in C++ using OpenCV library.}
 
 %----------------------------------------------------------------------------------------
 %	COMMUNICATION SKILLS SECTION
@@ -173,39 +185,18 @@ Worked as volunteer}
 
 \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
 
-\cvlistdoubleitem{Music}{Playing on acoustic/electrical guitar}
-\cvlistdoubleitem{Martial arts}{Windsurfing}
-\cvlistitem{Climbing}
+\cvlistdoubleitem{Film music}{Analog electronics}
+\cvlistdoubleitem{Rock climbing}{Mountaineering}
 
 \section{Non professional achievments}
 \cvitem{}{Co-autor, music composer for feature-length documentary movie "Get away to Pitcairn". The movie premiere was 15 march 2015, on "Kolosy" festival in Gdynia.}
+\cvitem{}{Co-autor, music composer for short-length documentary movie "Bedtime stories". The movie premiere in 2016, on "Papaya Films" festival in Bydgoszcz.}
 
 \footnotesize{
   \vfill
 Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w niniejszym dokumencie dla potrzeb niezbędnych do procesu rekrutacji
 (zgodnie z Ustaw a z dnia 29.08.1997 o ochronie danych osobowych, Dziennik Ustaw Nr 133 Poz. 883)
 }
-%----------------------------------------------------------------------------------------
-%	COVER LETTER
-%----------------------------------------------------------------------------------------
-
-% To remove the cover letter, comment out this entire block
-
-%\clearpage
-%
-%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
-%\date{\today} % Letter date
-%\opening{Dear Sir or Madam,} % Opening greeting
-%\closing{Sincerely yours,} % Closing phrase
-%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
-%
-%\makelettertitle % Print letter title
-%
-%\lipsum[1-3] % Dummy text
-%
-%\makeletterclosing % Print letter signature
-
-%----------------------------------------------------------------------------------------
 
 \end{document}
 \grid
