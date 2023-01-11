@@ -66,35 +66,6 @@
 
 
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Work experience}
-
-\cventry{2018--*}{Software developer}{Falcon V Systems}{}{}{}
-\cvitem{Expertises}{
-    \begin{itemize}
-    \item Developing micro-services solution, powered by Docker/Kubernetes.
-    \item Developing advanced test-framework. Implemetnation of System Under Test methodology as a collection of micro-services.
-    \item Working with many Cable-Labs documents describing network protocols (GCP, L2TPv3, DOCSIS)
-    \end{itemize}
-}
-
-\cventry{2015--2018}{Software engineer}{Intel Technology Poland}{}{}{Teams: \begin{itemize}
-    \item  \textit{High performance computing} (2015-2017)
-    \item \textit{Data center group} (2017-2018)
-\end{itemize} }
-\cvitem{Expertises}{
-    \begin{itemize}
-    \item Making automate software tests, using Python and C++.
-    \item Monitoring of tests results.
-    \item Maintaining proprietary test schedule framework, written in Python.
-    \item Debugging code and shipping bug-reproduction scripts.
-    \item Applying CVE fixes for product-specific linux kernel.
-    \end{itemize}
-}
-
-%----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
@@ -103,48 +74,52 @@
 \cvitem{\textbf{Python}:} {
     \begin{itemize}
     \item \textbf{asyncio} : Creating concurrent code.
-    \item \textbf{multiprocessing}: Ability to use multiprocessing from python standard library. Creating paralellism in remote workers, or remote server manner.
+    \item \textbf{multiprocessing}: Ability to use multiprocessing from python standard library. Creating parallelism in remote workers, or remote server manner.
     \item \textbf{fast-api}: Ability to create rest API with swagger documentation and validation.
     \item \textbf{scapy}: Basic knowledge of creation and usage of OSI model layers.
     \item \textbf{pytest}: Advanced knowledge about writing tests, fixtures, customization of test cases collection process, parametrization.
     \item \textbf{pdb/pudb}: Effective using interfaces of debugger and skillful using all of its tools.
     \item \textbf{Sphinx}: General knowledge about rules for making comments compatible with the documentation generator, generating documentation using pre-defined styles.
     \item \textbf{Django}: Basic knowledge of making applications and assumptions of the framework.
-    \item \textbf{Kivy}: Making applications with dynamic added widgets, using standard loop of events.
+    % \item \textbf{Kivy}: Making applications with dynamic added widgets, using standard loop of events.
     \end{itemize}
 }
-
-\cvitem{\textbf{Rust}:} {
-    \begin{itemize}
-        \item \textbf{Tokio}: Basic knowledge of creating async code and some knowlegde of related libraries like \textbf{Hyper}, \textbf{Warp}, \textbf{Reqwest}.
-        \item \textbf{sha2}, \textbf{hmac}, \textbf{cucumber}, \textbf{serde}, \textbf{indexmap}, \textbf{piston}: Basic knowledge
-        %\item \textbf{Rocket}: Knowlegde of basic concepts of framework.
-    \end{itemize}
-}
-
-\cvitem{\textbf{Go}:} {
-    \begin{itemize}
-        \item \textbf{Gin}: Http server library. Basic knowlegde.
-    \end{itemize}
-}
-
 
 
 \cvitem{\textbf{Frameworks/Technologies}:} {
     \begin{itemize}
-    \item \textbf{Docker} Creating and using docker containers as developer environment and release product, working with docker custom networks, spawning docker containers from another container, using docker compose, as test environment, basic knowlegde about "docker swarm".
-    \item \textbf{Kubernetes}
-    \item \textbf{RabbitMQ}
-    \item \textbf{InfluxDB}
-    \item \textbf{Grafana}
-    \item \textbf{Jenkins}
-    \item \textbf{SQL} by MariaDB.
-    \item \LaTeX.
-    \item \textbf{Bash}
-    \item Basics of \textbf{html/css}.
-    \item Making virtual machines using \textbf{libvirt} paired with \textbf{Qemu}.
+        \item \textbf{Docker} Creating and using docker containers as developer environment and release product, working with docker custom networks, spawning docker containers from another container, using docker compose, as test environment, basic knowledge about "docker swarm".
+        \item \textbf{Kubernetes}
+        \item \textbf{RabbitMQ}
+        \item \textbf{InfluxDB}
+        \item \textbf{Grafana}
+        \item \textbf{Jenkins}
+        \item \textbf{GCP BigQuery} basic knowledge.
+        \item \textbf{SQL} basic knowledge by MariaDB.
+        \item \LaTeX.
+        \item \textbf{Bash}
+        \item Basics of \textbf{html/css}.
+        \item Making virtual machines using \textbf{libvirt} paired with \textbf{Qemu}.
+    \end{itemize}
+    }
+    
+\cvitem{\textbf{Rust}:} {
+        \begin{itemize}
+            \item \textbf{Tokio}: Basic knowledge of creating async code and some knowledge of related libraries like \textbf{Hyper}, \textbf{Warp}, \textbf{Reqwest}.
+            \item \textbf{sha2}, \textbf{hmac}, \textbf{cucumber}, \textbf{serde}, \textbf{indexmap}, \textbf{piston}: Basic knowledge
+            %\item \textbf{Rocket}: Knowledge of basic concepts of framework.
+        \end{itemize}
+    }
+
+
+\cvitem{\textbf{Go}:} {
+    \begin{itemize}
+        \item \textbf{Gin}: Http server library. Basic knowledge.
     \end{itemize}
 }
+
+
+
 
 \cvitem{\textbf{Linux}:}{
     Knowledge about GNU/Linux OS.
@@ -170,7 +145,34 @@
 \item Creating and compiling programs for AVR microcontrollers using \textbf{avrlibc}.
 \end{itemize}}
 
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
 
+\section{Work experience}
+
+\cventry{2018--2022}{Software developer}{Falcon V Systems}{}{}{}
+\cvitem{Expertises}{
+    \begin{itemize}
+    \item Developing micro-services solution, powered by Docker/Kubernetes.
+    \item Developing advanced test-framework. Implementation of System Under Test methodology as a collection of micro-services.
+    \item Working with many Cable-Labs documents describing network protocols (L2TPv3, DOCSIS)
+    \end{itemize}
+}
+
+\cventry{2015--2018}{Software engineer}{Intel Technology Poland}{}{}{Teams: \begin{itemize}
+    \item  \textit{High performance computing} (2015-2017)
+    \item \textit{Data center group} (2017-2018)
+\end{itemize} }
+\cvitem{Expertises}{
+    \begin{itemize}
+    \item Making automate software tests, using Python and C++.
+    \item Monitoring of tests results.
+    \item Maintaining proprietary test schedule framework, written in Python.
+    \item Debugging code and shipping bug-reproduction scripts.
+    \item Applying CVE fixes for product-specific linux kernel.
+    \end{itemize}
+}
 
 
 %----------------------------------------------------------------------------------------
@@ -227,7 +229,7 @@
 \cvlistdoubleitem{Film music (sometimes as a composer)}{Analog electronics}
 \cvlistdoubleitem{Rock climbing}{BJJ}
 
-%\section{Non professional achievments}
+%\section{Non professional achievements}
 %\cvitem{}{Co-autor, music composer for feature-length documentary movie "Get away to Pitcairn". The movie premiere was 15 march 2015, on "Kolosy" festival in Gdynia.}
 %\cvitem{}{Co-autor, music composer for short-length documentary movie "Bedtime stories". The movie premiere in 2016, on "Papaya Films" festival in Bydgoszcz.}
 
